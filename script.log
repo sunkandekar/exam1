@@ -1,0 +1,34 @@
+/c/Users/HP/exam1
+HP
+Total Physical Memory:         16,190 MB
+Available Physical Memory:     7,646 MB
+Virtual Memory: Max Size:      24,286 MB
+Virtual Memory: Available:     14,279 MB
+Virtual Memory: In Use:        10,007 MB
+Filesystem            Size  Used Avail Use% Mounted on
+C:/Program Files/Git  182G  156G   26G  86% /
+D:                    294G  2.7G  292G   1% /d
+total 3
+-rw-r--r-- 1 HP 197121 695 Sep 25 11:22 Readme.md
+-rw-r--r-- 1 HP 197121 378 Sep 25 11:23 script.log
+-rwxr-xr-x 1 HP 197121 300 Sep 25 11:23 script.sh
+#!/bin/bash
+
+# Print present working directory
+pwd
+
+# Print current user's name
+whoami
+
+# Print memory resources available
+systeminfo | findstr /C:"Total Physical Memory"
+
+# Print disk space available
+df -h
+
+# List all files in current directory
+ls -l
+
+# Print contents of this script
+cat script.sh
+
